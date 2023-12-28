@@ -35,11 +35,11 @@ class StringCompressor {
 
             for (i in segments.indices step 2) {
                 val char = segments[i][0]
-                val count = segments[i + 1].toInt()
-                if (count > 0) {
-                    decompressedStringBuilder.append(char.toString().repeat(count))
+                val counter = segments[i + 1].toInt()
+                if (counter > 0) {
+                    decompressedStringBuilder.append(char.toString().repeat(counter))
                 } else {
-                    throw IllegalArgumentException("Invalid count in decompressed data: $count")
+                    throw IllegalArgumentException("Invalid counter in decompressed data: $counter")
                 }
             }
             return decompressedStringBuilder.toString()
