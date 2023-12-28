@@ -1,1 +1,1 @@
-# jb-test-task-ai-refactorings
+# Test task for Enhancing Code Generation and Refactorings with AI Tools
